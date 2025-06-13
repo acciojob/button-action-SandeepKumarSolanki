@@ -6,11 +6,12 @@ const App = (props) => {
   const [vis , setVis] = useState(false)
 
   function handleClick(){
-    setVis(true);
+    setVis(vis => !vis);
   }
   return (
 
     <div className="App" id="main">
+      
       {/* // Do not alter the main div */}
       {vis === false ? (
         <button 
