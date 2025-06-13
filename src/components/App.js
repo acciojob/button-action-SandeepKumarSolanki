@@ -11,17 +11,13 @@ const App = (props) => {
   return (
 
     <div className="App" id="main">
-      
+
       {/* // Do not alter the main div */}
-      {vis === false ? (
+      {vis === false && <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p> }
         <button 
         onClick={handleClick}
-        id="click">Show</button>
+        id="click">{vis ? "Show" : "Hide"}</button>
         
-      ):(
-          <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
-        )
-      }
     </div>
   );
 }
